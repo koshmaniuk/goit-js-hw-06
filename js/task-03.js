@@ -16,13 +16,11 @@ const images = [
 ];
 
 const list = document.querySelector(".gallery")
-console.log(list);
 
 function createMarkUp(array) {
   const markup = array.map(({url, alt}) => `<li class="picture"> <img src="${url}" alt="${alt}" width="300"> </li>`).join("")
   
   list.insertAdjacentHTML("afterbegin", markup)
-
 }
 
 createMarkUp(images)

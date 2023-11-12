@@ -12,11 +12,11 @@ const ingredients = [
 const list = document.querySelector("#ingredients")
 
 function createMarkUp(array) {
-  const markup = array.map((name) => {
+  const markup = array.map((ingredient) => {
     const li = document.createElement("li");
-    li.textContent = name;
-    li.classList.add("item");
-    return li;
+      li.textContent = ingredient;
+      li.classList.add("item");
+        return li;
   })
   list.append(...markup)
 }
